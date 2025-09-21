@@ -2,12 +2,20 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
+import LogoSection from './components/LogoSection'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="text-[100px]">Hello Ima </div>
+    <div>
+      <Navbar/>
+      <HeroSection/>
+      <LogoSection/>
+
+    </div>
   )
 }
 
